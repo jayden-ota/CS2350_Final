@@ -1,0 +1,14 @@
+.task_desc div {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.4rem 0.5rem;
+}
+
+.task_desc div:nth-child(odd) {
+    background-color: #1387b9;
+}
+
+#status {
+    color: red;
+    font-weight: bolder;
+}

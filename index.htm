@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS2350 Final - Home</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/general.css">
+    <script src="scripts/script.js" defer></script>
+</head>
+
+<body>
+    <nav>
+        <div>
+            <a href="#"><img src="images/dashboard.png" alt="Home Page" />Home</a>
+            <a href="pages/knowledge.htm"><img src="images/idea.png" alt="Knowledge Base Page" />Knowledge Base</a>
+        </div>
+            <a href="https://www.flaticon.com/free-icons/idea" title="idea icons"><small>Idea icons created by Freepik -
+                Flaticon</small></a>
+    </nav>
+    <main>
+        <h1>Dashboard</h1>
+        <!-- Task List -->
+        <section>
+            <h2>Upcoming Tasks</h2>
+            <ol id="tasks">
+                <li>
+                    <a href="pages/task.htm">
+                        <div>Oil Change Due</div>
+                        <div>Priority: <span class="prio_high">High</span></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="pages/task2.htm">
+                        <div>Prep. Room Lights Out</div>
+                        <div>Priority: <span class="prio_mod">Moderate</span></div>
+                    </a>
+                </li>
+                <li>
+                    <a href="pages/task3.htm">
+                        <div>Decoration Updates</div>
+                        <div>Priority: <span class="prio_low">Low</span></div>
+                    </a>
+                </li>
+            </ol>
+            <form>
+                <div>
+                    <label for="name">Task Name</label>
+                    <input type="text" id="name">
+                </div>
+                <div>
+                    <label for="prio_sel">Priority</label>
+                    <select name="prio_sel" id="prio_sel">
+                        <option value="prio_low">Low</option>
+                        <option value="prio_mod">Moderate</option>
+                        <option value="prio_high">High</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="t_date">Date</label>
+                    <input type="date" id="t_date">
+                </div>
+                <div>
+                    <label for="loc_sel">Location</label>
+                    <select name="loc_sel" id="loc_sel">
+                        <option value="Ogden">Ogden</option>
+                        <option value="North Ogden">North Ogden</option>
+                        <option value="Roy">Roy</option>
+                        <option value="Layton">Layton</option>
+                        <option value="Syracuse">Syracuse</option>
+                        <option value="Kaysville">Kaysville</option>
+                    </select>
+                </div>
+            </form>
+            <button id="task">Add Task</button>
+        </section>
+        <!-- Funerals -->
+        <section>
+            <h2>Upcoming Funerals</h2>
+            <hr>
+            <ol>
+                <li>
+                    <a href="pages/service.htm">
+                        <div>Service 1</div>
+                        <div>Priority: <span class="prio_high">High</span></div>
+                    </a>
+                <li>
+                    <a href="pages/service2.htm">
+                        <div>Service 2</div>
+                        <div>Priority: <span class="prio_low">Low</span></div>
+                    </a>
+                </li>
+            </ol>
+        </section>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,214 @@
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    background-color: #0B4F6C;
+    color: white;
+    padding: 0.5rem;
+}
+
+nav {
+    flex: 1;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav a {
+    display: inline-block;
+    background-color: #08A4BD;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    margin: 0.2rem 0;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+
+nav a:hover {
+    background-color: darkblue;
+    transform: scale(1.1);
+    transition: transform 0.25s;
+}
+
+a img {
+    margin: 0 0.5rem;
+    height: 1rem;
+}
+
+nav hr {
+    margin: 0.5rem;
+}
+
+small {
+    font-size: 0.6rem;
+}
+
+main {
+    flex: 4;
+    padding: 0 0.8rem;
+    margin: 1rem 0;
+}
+
+section {
+    margin-bottom: 0.8rem;
+}
+
+h1 {
+    font-size: 1.5rem;
+    border-bottom: 1px solid gray;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 1.2rem;
+}
+
+h3 {
+    text-decoration: underline;
+}
+
+hr {
+    margin: 2rem 0;
+}
+
+ol,
+ul {
+    list-style-type: none;
+    margin-bottom: 1rem;
+}
+
+li:nth-child(even) {
+    background-color: #1387b9;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    background-color: #36b5eb;
+}
+
+button:hover {
+    background-color: darkblue;
+}
+
+li a {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+li div {
+    padding: 0.8rem;
+}
+
+button {
+    width: 100%;
+    padding: 0.4rem;
+    margin: 0.8rem 0;
+    background-color: #08A4BD;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    color: white;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    font-weight: bold;
+}
+
+th {
+    text-align: left;
+}
+
+thead td {
+    border-bottom: 1px solid black;
+}
+
+tr:nth-child(even) {
+    background-color: #1387b9;
+}
+
+td {
+    padding: 0.5rem;
+}
+
+.prio_high {
+    color: red;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.prio_mod {
+    color: #F1C40F;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.prio_low {
+    color: #d5d5d5;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+form {
+    display: none;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 0.5rem;
+}
+
+form div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.2rem 0;
+}
+
+form label {
+    flex: 1;
+}
+
+form input,
+form label {
+    display: inline-block;
+}
+
+form input,
+form select {
+    flex: 3;
+}
+
+form input,
+form select,
+form label {
+    padding: 0.2rem;
+}
+
+form select {
+    text-align: center;
+}
+
+@media screen and (min-width: 800px) {
+    body {
+        flex-direction: row;
+    }
+
+    main {
+        margin: 0;
+    }
+}
